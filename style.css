@@ -1,0 +1,154 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling with background image */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the header */
+    border-bottom: 1px solid #ddd;
+}
+
+.header img {
+    max-height: 50px; /* Adjust logo size */
+}
+
+/* Navigation and buttons */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Middle section styling */
+.middle-buttons {
+    display: flex;
+    justify-content: center top;
+    align-items: center top;
+    width: 120px;
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack buttons vertically */
+}
+
+.middle-buttons button {
+    background-color: #eee9e9;
+    color: #eb0f0f;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0; /* Space between buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.middle-buttons button:hover {
+    background-color: #ffffff;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Additional animation on load */
+.middle-buttons button {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Keyframes for button fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling for headings */
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Basic paragraph styling */
+p {
+    margin-bottom: 1em;
+}
+
+/* Unordered and ordered lists */
+ul, ol {
+    margin-bottom: 1em;
+    padding-left: 20px;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Basic styling for containers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
