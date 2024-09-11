@@ -1,2 +1,0 @@
-# shopthis
-Ladies Fancy Store
